@@ -2,7 +2,6 @@
     height: 100%;
     width: 50%;
     position: fixed;
-    top: 0;
     padding-top: 20px;
 }
 
@@ -55,13 +54,29 @@ input {
 }
 
 .bottom {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
+    position: fixed;
+    bottom: 40px;
     z-index: 3;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
+    .side {height: 100%}
+    .side {width: 100%}
+    .side {position: absolute}
+    .left {left: 0}
+    .right {left: 0}
+    .left {top: 0}
+    .right {top: 50%}
+    .bottom {position: fixed}
+    .bottom {top: 50%}
+    .bottom {left: 0}
+    .bottom {width: 20%}
+    .centered {top: 25%}
     #dog {width: 80%}
     #dog {height: 80%}
+}
+
+@media only screen and (min-width: 768px) {
+    .side {top: 0}
 }
